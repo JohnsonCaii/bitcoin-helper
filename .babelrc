@@ -1,0 +1,19 @@
+{
+  "presets": [
+    "es2015",
+    "stage-3",
+    "stage-0"
+  ],
+  "plugins": ["transform-decorators-legacy"],
+  "ignore":[
+    "node_modules"
+  ],
+  "env": {
+    "build": {
+      "optional": [
+        "optimisation",
+        "minification"
+      ]
+    }
+  }
+}
