@@ -56,7 +56,9 @@ export default class BitcoinHelper {
     tx.setVersion(2)
     tx.addInput(txId, txOutputIndex)
     tx.addOutput(targetAddress, satuxiSendValue)
-    tx.addOutput(chargeAddress, satuxiCharge)
+
+    charge !== 0 && tx.addOutput(chargeAddress, satuxiCharge)
+    
     tx.sign(0, keyPair)
 
     const txBuild = tx.build()
