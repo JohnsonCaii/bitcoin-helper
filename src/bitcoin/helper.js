@@ -9,7 +9,7 @@ export default class BitcoinHelper {
    * @param wif wallet import format
    * @param satuxiRate
    */
-  constructor({ network, wif, satuxiRate }) {
+  constructor({ network, wif, satuxiRate = 100000000 }) {
     this._network = network === 'mainnet' ? bitcoin.networks.bitcoin : bitcoin.networks.testnet
     this._wif = wif
     this._satuxiRate = satuxiRate

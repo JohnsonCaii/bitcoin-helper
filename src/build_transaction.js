@@ -10,7 +10,6 @@ import { pbcopy } from './lib/cmd'
   const INITIAL_PARAMS = {
     wif: '', // Your wallet import format private key
     network: '', // mainnet or testnet
-    satuxiRate: 100000000
   }
 
   const TX_PARAMS = {
