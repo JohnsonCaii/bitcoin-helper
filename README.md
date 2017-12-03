@@ -3,4 +3,4 @@
 
 So I'd like to add more COIN helper such as BCH, ETH, LTC in the future.
 
-btw, u guys can also write things up if interested. 🌝
+BTW, u guys can also write things up if interested. 🌝
