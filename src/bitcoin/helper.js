@@ -15,10 +15,6 @@ export default class BitcoinHelper {
     this._satuxiRate = satuxiRate
   }
 
-  /**
-   * 生成比特币地址
-   * @returns { {wif, address} }
-   */
   generateAddress() {
     const pair = bitcoin.ECPair.makeRandom({ network: this._network })
     return {
@@ -27,10 +23,6 @@ export default class BitcoinHelper {
     }
   }
 
-  /**
-   * 根据 Wallet Import Format 生成比特币地址
-   * @param wif
-   */
   getAddressByWIF() {
     const keyPair = bitcoin.ECPair.fromWIF(this._wif, this._network)
     return keyPair.getAddress()
